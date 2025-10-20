@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>5장_12번</title>
+</head>
+<body>
+    <h1>프런트엔드 개발자 지원서</h1>
+    <p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+
+    <form action="info">
+        <ul type="none">
+            <li>
+            <h3>개인 정보</h3>
+            <label for="name">이름 <input type="text" placeholder="공백 없이 입력하세요."></label>
+            </li>
+            <label for="phone">연락처 <input type="text"></label>
+            </li>
+        </ul>
+        <ul type="none">
+            <h3>지원 분야</h3>
+            <li>
+                <input type="radio" name="publishing" id="publishing" value="publishing">
+                <label for="publishing">웹 퍼블리싱</label>
+            </li>
+            <li>
+                <input type="radio" name="app" id="app" value="app">
+                <label for="app">웹 애플리케이션 개발</label>
+            </li>
+            <li>
+                <input type="radio" name="env" id="env" value="env">
+                <label for="env">개발 환경 개선</label>
+            </li>
+            <li>
+                <h3>지원 동기</h3>
+                <textarea name="motivation" id="motivation" 
+                placeholder="본사 지원 동기를 간략히 써 주세요" cols="60" rows="8"></textarea><br>
+                <input type="submit" value="제출하기">
+                <input type="reset" value="다시 쓰기">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
