@@ -1,0 +1,30 @@
+#container {
+  max-width: 1000px;
+  margin: 20px auto;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.prod-list {
+  list-style: none;
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
+.prod-list li {
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+  flex-basis: calc(33.333% - 20px); 
+}
+
+.prod-list img {
+  width: 100%; 
+  height: auto; 
+  z-index: 5;
+}
