@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>가위바위보 게임</title>
+</head>
+<body>
+
+<script>
+const choices = ["가위", "바위", "보"];
+const player = prompt("가위, 바위, 보 중 하나를 입력하세요!");
+
+if (choices.includes(player)) {
+    const computer = choices[Math.floor(Math.random() * 3)];
+
+    let result = "";
+    if (player === computer) {
+        result = "무승부!";
+    } else if (
+        (player === "가위" && computer === "보") ||
+        (player === "바위" && computer === "가위") ||
+        (player === "보" && computer === "바위")
+    ) {
+        result = "당신이 승리!";
+    } else {
+        result = "컴퓨터 승리!";
+    }
+
+    alert(`당신: ${player}\n컴퓨터: ${computer}\n결과: ${result}`);
+} else {
+    alert("잘못 입력했습니다. 다시 실행해주세요.");
+}
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
